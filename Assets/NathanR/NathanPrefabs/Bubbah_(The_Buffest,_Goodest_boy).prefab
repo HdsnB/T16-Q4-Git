@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 5771900088102712018}
   - component: {fileID: 5771900088102712019}
   - component: {fileID: 7578691421559970317}
+  - component: {fileID: 3051652079042896098}
   - component: {fileID: 5771900088102712022}
   m_Layer: 0
   m_Name: Bubbah_(The_Buffest,_Goodest_boy)
@@ -168,7 +169,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07482684, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -179,7 +180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2}
+  m_Size: {x: 0.8755834, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &5771900088102712019
 MonoBehaviour:
@@ -204,6 +205,7 @@ MonoBehaviour:
   moveSpeed: 12.5
   fallMultiplier: 5
   jumpSound: {fileID: 0}
+  DoubleJumpSound: {fileID: 0}
 --- !u!114 &7578691421559970317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +226,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   biteSound: {fileID: 0}
+--- !u!114 &3051652079042896098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771900088102712016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fca25c214e9ba48902a7f057e9a8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingHP: 100
+  CurrentHP: 0
 --- !u!95 &5771900088102712022
 Animator:
   serializedVersion: 3
@@ -234,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 5771900088102712016}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c321f9379594b24a9dc4a49570b6fc9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

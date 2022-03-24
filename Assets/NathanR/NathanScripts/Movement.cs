@@ -27,6 +27,7 @@ public class Movement : MonoBehaviour
     private bool facingRight = true;
 
     public AudioSource jumpSound;
+    public AudioSource DoubleJumpSound;
 
     // anim stuff ---------------------------------------------------------------------------------------------
     Animator a;
@@ -83,7 +84,7 @@ public class Movement : MonoBehaviour
             //Debug.Log("jump sound 2");
             extraJumps--;
             //Debug.Log("jump sound 2");
-            jumpSound.Play();
+            DoubleJumpSound.Play();
             //Debug.Log("jump sound 2");
         }
 
