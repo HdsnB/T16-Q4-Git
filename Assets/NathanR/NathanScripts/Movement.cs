@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
 
         float horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
 
-        if (horizValue == 0)
+        if (Mathf.Abs(horizValue) <= 0.3f)
         {
             a.SetBool("Moving", false);
         }
