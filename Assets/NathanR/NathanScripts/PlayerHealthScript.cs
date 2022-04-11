@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthScript : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class PlayerHealthScript : MonoBehaviour
         if (CurrentHP == 0)
         {
             Debug.Log("dead");
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("MenuScene");
         }
     }
 }
