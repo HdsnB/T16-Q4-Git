@@ -64,8 +64,8 @@ GameObject:
   - component: {fileID: 3051652079042896098}
   - component: {fileID: 5771900088102712022}
   m_Layer: 0
-  m_Name: Bubbah_(The_Buffest,_Goodest_boy)
-  m_TagString: Untagged
+  m_Name: Bubba
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,7 +12,7 @@ public class CreditsMoveScrip : MonoBehaviour
     void Start()
     {
         creditsMove = 0;
-        creditsMoveMax = 7;
+        creditsMoveMax = 5;
     }
 
     // Update is called once per frame
@@ -27,12 +27,12 @@ public class CreditsMoveScrip : MonoBehaviour
                 //Debug.Log("Credits Camera Resset");
                 //transform.position = new Vector3(transform.position.x, transform.position.y + 60, transform.position.z);
                 //creditsMove -= 7;
-                SceneManager.LoadScene("Menu UI");
+                SceneManager.LoadScene("MenuScene");
             }
             else
             {
                 Debug.Log("Credits Camera Move");
-                transform.position = new Vector3(transform.position.x, transform.position.y - 10, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y - 20, transform.position.z);
             }
             
         }
