@@ -218,13 +218,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae93b08f57e250e4fb1226df1641ba26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackDamage: 0
+  AttackDamage: 1
   PlayerAnimator: {fileID: 5771900088102712022}
   AttackPoint: {fileID: 6493062340536944932}
   attackRange: 0.75
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   biteSound: {fileID: 0}
 --- !u!114 &3051652079042896098
 MonoBehaviour:

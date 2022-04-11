@@ -46,7 +46,7 @@ public class AttackScript : MonoBehaviour
         //do damage
         foreach (Collider2D enemy in hitEnemies)
         {
-            //enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
+            enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
             Debug.Log("Hit" + enemy.name);
             //GetComponent<PlayerHealth>().getHealed();
 
