@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 7578691421559970317}
   - component: {fileID: 3051652079042896098}
   - component: {fileID: 5771900088102712022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bubba
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ MonoBehaviour:
   jumpCut: 0.5
   ground:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
   jumpPower: 25
   moveSpeed: 12.5
   fallMultiplier: 5
