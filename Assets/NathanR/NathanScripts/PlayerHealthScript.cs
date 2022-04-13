@@ -7,6 +7,7 @@ public class PlayerHealthScript : MonoBehaviour
 {
     public int StartingHP;
     public int CurrentHP;
+    public GameObject LastCheckpoint;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,27 @@ public class PlayerHealthScript : MonoBehaviour
         if (CurrentHP == 0)
         {
             Debug.Log("dead");
+            Die();
         }
 
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene("MenuScene");
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "checkpoint")
+        {
+            LastCheckpoint = collision.gameObject;
+        }
+
+    }
+
+    public void Die()
+    {
+        CurrentHP = StartingHP;
+        transform.position = LastCheckpoint.transform.position;
     }
 }
