@@ -14,9 +14,19 @@ public class CheckForPlayerCollision : MonoBehaviour
         //Debug.Log(collision.gameObject.tag);
         if(collision.gameObject.tag == "Player")
         {
+
             rb2 = mainPlayer.GetComponent<Rigidbody2D>();
-            rb2.velocity = new Vector2(0, 0);
-            mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
+
+            if (mainPlayer.GetComponent<PlayerHealthScript>().LastCheckpoint == null)
+            {
+                rb2.velocity = new Vector2(0, 0);
+                mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
+            }
+            else
+            {
+                mainPlayer.GetComponent<PlayerHealthScript>().Die();
+            }
+            
         }
     }
 
