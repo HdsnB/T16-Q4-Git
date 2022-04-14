@@ -8,6 +8,7 @@ public class PlayerHealthScript : MonoBehaviour
     public int StartingHP;
     public int CurrentHP;
     public GameObject LastCheckpoint;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,6 @@ public class PlayerHealthScript : MonoBehaviour
     public void Die()
     {
         CurrentHP = StartingHP;
-        transform.position = LastCheckpoint.transform.position;
+        transform.position = new Vector3 (LastCheckpoint.transform.position.x, LastCheckpoint.transform.position.y + 0.5f, 0f) ;
     }
 }
