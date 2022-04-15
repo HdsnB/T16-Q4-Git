@@ -8,7 +8,7 @@ public class ENEMYAgro : MonoBehaviour
     [SerializeField]
     GameObject face;
 
-    Animator faceAnimator;
+    //Animator faceAnimator;
 
 
     [SerializeField]
@@ -29,7 +29,7 @@ public class ENEMYAgro : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        faceAnimator = face.GetComponent<Animator>();
+        //faceAnimator = face.GetComponent<Animator>();
         sprt = GetComponent<SpriteRenderer>();
     }
 

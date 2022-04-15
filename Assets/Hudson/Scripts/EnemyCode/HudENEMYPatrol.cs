@@ -19,10 +19,11 @@ public class HudENEMYPatrol : MonoBehaviour
     private Transform player;
     public GameObject bullet;
     public GameObject Player;
-    public AudioSource pewSound;
+    //public AudioSource pewSound;
 
     // anim stuff ---------------------------------------------------------------------------------------------
-    Animator a;
+    
+    //Animator a;
     bool isShooting;
 
     public class AudioScript : MonoBehaviour
@@ -32,13 +33,14 @@ public class HudENEMYPatrol : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.Find("Character(HasAnims)");
+        Player = GameObject.Find("WizardCat");
         player = Player.GetComponent<Transform>();
         mustPatrol = true;
         canShoot = true;
 
         // anim stuff ---------------------------------------------------------------------------------------------
-        a = GetComponent<Animator>();
+        //a = GetComponent<Animator>();
+
         //bool isShooting = false;
     }
 
@@ -46,8 +48,9 @@ public class HudENEMYPatrol : MonoBehaviour
     void Update()
     {
         // anim stuff ---------------------------------------------------------------------------------------------
-        a.SetFloat("yVelocity", rb.velocity.y);
-        //a.SetBool("IsShooting", isShooting);
+        
+        //a.SetFloat("yVelocity", rb.velocity.y);
+       // a.SetBool("IsShooting", isShooting);
 
         if (mustPatrol)
         {
@@ -71,7 +74,8 @@ public class HudENEMYPatrol : MonoBehaviour
             {
                 StartCoroutine(Shoot());
                 //bool isShooting = true; 
-                a.SetBool("IsShooting", true);
+
+              //  a.SetBool("IsShooting", true);
             }
 
         }
@@ -79,7 +83,8 @@ public class HudENEMYPatrol : MonoBehaviour
         {
             mustPatrol = true;
             //bool isShooting = false;
-            a.SetBool("IsShooting", false);
+
+           // a.SetBool("IsShooting", false);
         }
 
     }
@@ -113,7 +118,7 @@ public class HudENEMYPatrol : MonoBehaviour
         canShoot = false;
 
         yield return new WaitForSeconds(timeBTWShots);
-        pewSound.Play();
+       // pewSound.Play();
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
 
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
