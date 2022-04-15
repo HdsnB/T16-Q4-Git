@@ -19,16 +19,16 @@ public class HudENEMYPatrol : MonoBehaviour
     private Transform player;
     public GameObject bullet;
     public GameObject Player;
-    public AudioSource pewSound;
+    //public AudioSource pewSound;
 
     // anim stuff ---------------------------------------------------------------------------------------------
     Animator a;
     bool isShooting;
 
-    public class AudioScript : MonoBehaviour
-    {
-        AudioSource audioSource;
-    }
+    //public class AudioScript : MonoBehaviour
+   // {
+   //     AudioSource audioSource;
+   // }
 
     void Start()
     {
@@ -113,7 +113,7 @@ public class HudENEMYPatrol : MonoBehaviour
         canShoot = false;
 
         yield return new WaitForSeconds(timeBTWShots);
-        pewSound.Play();
+        //pewSound.Play();
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
 
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
