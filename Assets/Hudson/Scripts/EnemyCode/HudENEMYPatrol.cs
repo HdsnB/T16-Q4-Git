@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ENEMYPatrol : MonoBehaviour
+public class HudENEMYPatrol : MonoBehaviour
 { //CODE FROM ENEMY SHOOTING VIDEO (Mike Scriven)
     public float walkSpeed, range, timeBTWShots, shootSpeed;
     private float distToPlayer;
