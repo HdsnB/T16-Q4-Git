@@ -150,7 +150,7 @@ public class Movement : MonoBehaviour
 
     public bool IsGrounded() 
     {
-        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(1.5f, 1f, 0f), 0, Vector2.down, 0.7f, ground);
+        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.75f, 1f, 0f), 0, Vector2.down, 0.7f, ground);
         return grounded;
     }
 }
