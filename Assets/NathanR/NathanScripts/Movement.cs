@@ -66,18 +66,18 @@ public class Movement : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded() == true && extraJumps > 0) //jump function//
+        if (Input.GetButtonDown("Jump") && IsGrounded() == true) //jump function  && extraJumps > 0
         {
             Debug.Log("jump sound");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             //Debug.Log("jump sound");
-            extraJumps--;
+            //extraJumps--; not needed
             //Debug.Log("jump sound");
             jumpSound.Play();
             //.Log("jump sound");
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps > 1) //jump counter
+        if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps >= 1) //jump counter
         {
             Debug.Log("jump sound 2");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
