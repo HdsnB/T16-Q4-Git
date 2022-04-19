@@ -66,18 +66,18 @@ public class Movement : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump") && IsGrounded() == true && extraJumps > 0) //jump function//
+        if (Input.GetButtonDown("Jump") && IsGrounded() == true) //jump function   && extraJumps > 0
         {
             Debug.Log("jump sound");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             //Debug.Log("jump sound");
-            extraJumps--;
+            //extraJumps--; not needed
             //Debug.Log("jump sound");
             jumpSound.Play();
             //.Log("jump sound");
         }
 
-        if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps > 1) //jump counter
+        if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps >= 1) //jump counter
         {
             Debug.Log("jump sound 2");
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
@@ -104,25 +104,25 @@ public class Movement : MonoBehaviour
             extraJumps = extraJumpsValue;
         }
 
-        cayoteRemember -= Time.deltaTime; //cayote time//
-        if (IsGrounded())
-        {
-            cayoteRemember = cayoteTime;
-        }
+        //cayoteRemember -= Time.deltaTime; //cayote time//
+        //if (IsGrounded())
+        //{
+        //    cayoteRemember = cayoteTime;
+        //}
 
-        jumpStorage -= Time.deltaTime; 
-        if (Input.GetButtonDown("Jump"))
-        {
-            jumpStorage = jumpStorageTime;
-        }
+        //jumpStorage -= Time.deltaTime; 
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    jumpStorage = jumpStorageTime;
+        //}
 
-        if((jumpStorage > 0) && (cayoteRemember > 0) && (IsGrounded() == false))  //Jump?????????????????????????????
-        {
-            jumpStorage = 0;
-            cayoteRemember = 0;
-            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
-            jumpSound.Play();
-        }
+        //if((jumpStorage > 0) && (IsGrounded() == false))  //Jump????????????????????????????? /*&& (cayoteRemember > 0)*/
+        //{
+        //    jumpStorage = 0;
+        //    cayoteRemember = 0;
+        //    rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+        //    jumpSound.Play();
+        //}
 
         //fast fall
         if (rb.velocity.y < 0)
@@ -150,7 +150,7 @@ public class Movement : MonoBehaviour
 
     public bool IsGrounded() 
     {
-        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.75f, 1f, 0f), 0, Vector2.down, 0.7f, ground);
+        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.75f, 1.0f, 0f), 0, Vector2.down, 0.7f, ground);
         return grounded;
     }
 }
