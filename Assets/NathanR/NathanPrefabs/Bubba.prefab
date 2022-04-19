@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cayoteTime: 0
   jumpStorageTime: 0.1
-  extraJumpsValue: 2
+  extraJumpsValue: 1
   jumpCut: 0.5
   ground:
     serializedVersion: 2
