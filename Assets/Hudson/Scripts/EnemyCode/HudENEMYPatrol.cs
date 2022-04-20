@@ -19,6 +19,8 @@ public class HudENEMYPatrol : MonoBehaviour
     private Transform player;
     public GameObject bullet;
     public GameObject Player;
+
+    public float bulletLifetime;
     //public AudioSource pewSound;
 
     // anim stuff ---------------------------------------------------------------------------------------------
@@ -118,11 +120,26 @@ public class HudENEMYPatrol : MonoBehaviour
         canShoot = false;
 
         yield return new WaitForSeconds(timeBTWShots);
-       // pewSound.Play();
+        // pewSound.Play();
+        if(bullet == null)
+        {
+            Debug.Log("NO BULLET TO SHOOT!!!!");
+        }
+        Debug.Log("About to instantiate:    " + bullet.name);
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
+        newBullet.transform.position = new Vector3(newBullet.transform.position.x, newBullet.transform.position.y, 30);
 
-        newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
+        newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
         Debug.Log("Shoot");
+        Destroy(newBullet, bulletLifetime);
+
+        void OnCollosionEnter2D(Collision2D col)
+        {
+
+            Destroy(newBullet); // CHANGE THIS SOME HOW?!??!?! I DONT EVEN KNOW...
+
+        }
+
         canShoot = true;
         if (transform.position.x - player.position.x > 0f)
         {
@@ -130,4 +147,8 @@ public class HudENEMYPatrol : MonoBehaviour
             newBullet.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
+
+
+
+
 }
