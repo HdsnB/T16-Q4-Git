@@ -177,12 +177,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 350
+        x: 349
         y: 0
-        width: 345
+        width: 346
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.217, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,12 +198,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 700
+        x: 698
         y: 0
-        width: 345
+        width: 347
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.218, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,12 +219,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 1047
         y: 0
-        width: 345
+        width: 348
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.21615204, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1397
         y: 0
-        width: 345
+        width: 348
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.215, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -261,12 +261,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 1750
+        x: 1748
         y: 0
-        width: 345
+        width: 347
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.217, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -282,12 +282,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2097
         y: 0
-        width: 345
+        width: 349
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.215, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -303,12 +303,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 2450
+        x: 2448
         y: 0
-        width: 345
+        width: 344
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.215, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,12 +324,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 2797
         y: 0
-        width: 345
+        width: 348
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.217, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: Bubba_punch_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 3150
+        x: 3147
         y: 0
-        width: 345
+        width: 348
         height: 200
       alignment: 9
-      pivot: {x: 0.21, y: 0.5}
+      pivot: {x: 0.217, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
