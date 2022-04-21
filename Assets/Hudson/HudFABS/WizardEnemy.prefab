@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404dfc5f7c3ce00449bf111790d121a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 2
-  StartingHealth: 4
+  Health: 1
+  StartingHealth: 1
   DieSound: {fileID: 0}
 --- !u!50 &407864526401954826
 Rigidbody2D:
