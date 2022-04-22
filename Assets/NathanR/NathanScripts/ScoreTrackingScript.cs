@@ -20,4 +20,11 @@ public class ScoreTrackingScript : MonoBehaviour
     {
         
     }
+
+    public void GainCollectibles(int W, int S, int D)
+    {
+        Wood += W;
+        Stone += S;
+        Dogs += D;
+    }
 }
