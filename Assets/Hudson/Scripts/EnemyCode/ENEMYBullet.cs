@@ -5,28 +5,55 @@ using UnityEngine;
 public class ENEMYBullet : MonoBehaviour
 { //CODE FROM SAME SHOOTING VIDEO FOR BULLET (Mike Scriven)
 
-    public float dieTime, damage;
-    public GameObject diePEFFECt;
+    //public float dieTime, damage;
+
+    public GameObject InLevelPlayer;
     void Start()
     {
-        StartCoroutine(CountDownTimer());
+        InLevelPlayer = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void OnCollosionEnter2D(Collision2D col)
+    //public void OnCollosionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.tag == "Enviroment" || collision.gameObject.tag == "Player")
+    //    {
+    //        Debug.Log("HIT POGGERS");
+    //        if(collision.gameObject.tag == "Player")
+    //        {
+
+    //            InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP = -1;
+    //        }
+
+    //        //Destroy(gameObject);
+    //    }
+
+    //}
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "Enviroment" || collision.gameObject.tag == "Player")
+        {
+            Debug.Log("HIT POGGERS");
+            if (collision.gameObject.tag == "Player")
+            {
 
-        Die();
+                InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP -= 1;
+            }
+
+            Destroy(gameObject);
+
+        }
 
     }
 
-    IEnumerator CountDownTimer()
-    {
-        yield return new WaitForSeconds(dieTime);
 
-        Die();
-    }
-    void Die()
-    {
-        Destroy(gameObject);
-    }
+
+    //IEnumerator CountDownTimer()
+    //{
+    //    yield return new WaitForSeconds(dieTime);
+
+
+    //    Destroy(gameObject);
+    //}
+
 }

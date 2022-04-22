@@ -21,6 +21,7 @@ public class HudENEMYPatrol : MonoBehaviour
     public GameObject Player;
 
     public float bulletLifetime;
+
     //public AudioSource pewSound;
 
     // anim stuff ---------------------------------------------------------------------------------------------
@@ -131,14 +132,8 @@ public class HudENEMYPatrol : MonoBehaviour
 
         newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
         Debug.Log("Shoot");
-        Destroy(newBullet, bulletLifetime);
+        //Destroy(newBullet, bulletLifetime);
 
-        void OnCollosionEnter2D(Collision2D col)
-        {
-
-            Destroy(newBullet); // CHANGE THIS SOME HOW?!??!?! I DONT EVEN KNOW...
-
-        }
 
         canShoot = true;
         if (transform.position.x - player.position.x > 0f)
