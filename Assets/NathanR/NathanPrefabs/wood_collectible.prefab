@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5101857336181128853}
   - component: {fileID: 5101857336181128852}
   - component: {fileID: 6524109470141459489}
+  - component: {fileID: 6103183224029001557}
+  - component: {fileID: 2435240236135890612}
   m_Layer: 0
   m_Name: wood_collectible
   m_TagString: Untagged
@@ -129,3 +131,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6103183224029001557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5101857336181128859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a9958ab611e6e4b9d6d00704b62ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GivenWood: 1
+  GivenStone: 0
+  GivenDogs: 0
+--- !u!114 &2435240236135890612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5101857336181128859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404dfc5f7c3ce00449bf111790d121a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
+  StartingHealth: 1
+  DieSound: {fileID: 0}

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EnemyHealthScript : MonoBehaviour
 {
-    public float Health = 10;
+    public float Health = 1;
     [SerializeField]
-    public float StartingHealth = 10;
+    public float StartingHealth = 1;
     public AudioSource DieSound;
+    public bool isCollectible = false;
 
     public class AudioScript : MonoBehaviour
     {
@@ -32,6 +33,11 @@ public class EnemyHealthScript : MonoBehaviour
         Debug.Log("Enemy Hit");
         if (Health <= 0)
         {
+            if (isCollectible == true)
+            {
+                this.GetComponent<ColectibleScript>().CollectCollectible();
+            }
+
             //DieSound.Play();
             Debug.Log("Enemy Dead");
 
