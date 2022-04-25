@@ -47,6 +47,15 @@ public class AttackScript : MonoBehaviour
         //do damage
         foreach (Collider2D enemy in hitEnemies)
         {
+            if (this.transform.localScale.x > 0)
+            {
+                enemy.GetComponent<Rigidbody2D>().velocity += new Vector2(-5, 0);
+            }
+            else
+            {
+                enemy.GetComponent<Rigidbody2D>().velocity += new Vector2(5, 0);
+            }
+            
             enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
             Debug.Log("Hit" + enemy.name);
             //GetComponent<PlayerHealth>().getHealed();
