@@ -557,6 +557,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &239921354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1195,6 +1196,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &581436565
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16736,6 +16738,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1052870165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16984,6 +16987,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1106934213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17645,6 +17649,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1445324161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17862,6 +17867,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1531020818
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69374,6 +69380,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1616081137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69896,6 +69903,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1784023273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70113,6 +70121,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
+  isCollectible: 0
 --- !u!212 &1947838316
 SpriteRenderer:
   m_ObjectHideFlags: 0
