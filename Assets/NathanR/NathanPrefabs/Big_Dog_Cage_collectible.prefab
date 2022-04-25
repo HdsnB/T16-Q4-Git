@@ -115,7 +115,7 @@ MonoBehaviour:
   Health: 1
   StartingHealth: 1
   DieSound: {fileID: 0}
-  isCollectible: 0
+  isCollectible: 1
 --- !u!61 &8608683291548533580
 BoxCollider2D:
   m_ObjectHideFlags: 0

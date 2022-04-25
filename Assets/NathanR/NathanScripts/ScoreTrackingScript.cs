@@ -23,6 +23,7 @@ public class ScoreTrackingScript : MonoBehaviour
 
     public void GainCollectibles(int W, int S, int D)
     {
+        Debug.Log("ScoreTrackingScript used");
         Wood += W;
         Stone += S;
         Dogs += D;
