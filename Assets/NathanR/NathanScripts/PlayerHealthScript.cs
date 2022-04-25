@@ -9,6 +9,10 @@ public class PlayerHealthScript : MonoBehaviour
     public int CurrentHP;
     public GameObject LastCheckpoint;
     Rigidbody2D rb;
+    private GameObject cCP;
+    private string cCPName;
+    private string cCPName2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,11 +36,17 @@ public class PlayerHealthScript : MonoBehaviour
         }
     }
 
+    //checkpoint detector
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "checkpoint")
         {
             LastCheckpoint = collision.gameObject;
+            cCPName = collision.name;
+            cCPName2 = cCPName.Substring(cCPName.Length - 1);
+            cCP = GameObject.Find("check_point_copy_" + cCPName2);
+            Debug.Log(cCP.name);
+            cCP.GetComponent<CheckpointScript>().CheckpointSwap();
         }
 
     }

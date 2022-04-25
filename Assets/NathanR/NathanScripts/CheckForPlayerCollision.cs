@@ -8,6 +8,8 @@ public class CheckForPlayerCollision : MonoBehaviour
     public GameObject mainPlayer;
     private Rigidbody2D rb2;
 
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("=======");
