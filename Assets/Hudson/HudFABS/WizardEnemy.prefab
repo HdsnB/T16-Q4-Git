@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 407864526401955062}
   - component: {fileID: 407864526401955057}
   - component: {fileID: 949431714530000107}
+  - component: {fileID: 6620992956916299688}
   m_Layer: 8
   m_Name: WizardCat
   m_TagString: Untagged
@@ -350,6 +351,25 @@ MonoBehaviour:
   bullet: {fileID: 9170236090245644112}
   Player: {fileID: 0}
   bulletLifetime: 2
+--- !u!95 &6620992956916299688
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407864526401954824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d7b134c2771b6248bcbe153758fec14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2075872746304043666
 GameObject:
   m_ObjectHideFlags: 0
