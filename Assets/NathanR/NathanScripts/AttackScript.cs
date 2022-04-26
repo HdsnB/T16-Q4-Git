@@ -49,11 +49,17 @@ public class AttackScript : MonoBehaviour
         {
             if (this.transform.localScale.x > 0)
             {
+                if (enemy.GetComponent<Rigidbody2D>() != null)
+                {
                 enemy.GetComponent<Rigidbody2D>().velocity += new Vector2(-5, 0);
+                }
             }
             else
             {
-                enemy.GetComponent<Rigidbody2D>().velocity += new Vector2(5, 0);
+                if (enemy.GetComponent<Rigidbody2D>() != null)
+                {
+                    enemy.GetComponent<Rigidbody2D>().velocity += new Vector2(5, 0);
+                }
             }
             
             enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
