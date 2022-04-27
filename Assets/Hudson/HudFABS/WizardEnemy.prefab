@@ -319,8 +319,6 @@ MonoBehaviour:
   patrolPts:
   - {fileID: 407864525670144907}
   - {fileID: 407864526305006281}
-  - {fileID: 407864525670144907}
-  - {fileID: 407864525985610788}
   patrolPath: 0
   pathTime: 1
   currentTime: 0
