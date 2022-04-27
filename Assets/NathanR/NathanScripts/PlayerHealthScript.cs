@@ -54,6 +54,13 @@ public class PlayerHealthScript : MonoBehaviour
     public void Die()
     {
         CurrentHP = StartingHP;
-        transform.position = new Vector3 (LastCheckpoint.transform.position.x, LastCheckpoint.transform.position.y + 0.5f, 0f) ;
+        if (LastCheckpoint != null)
+        {
+            transform.position = new Vector3(LastCheckpoint.transform.position.x, LastCheckpoint.transform.position.y + 0.5f, 0f);
+        }
+        else
+        {
+            transform.position = new Vector3(-6.1f,-9.6f,0);
+        }
     }
 }
