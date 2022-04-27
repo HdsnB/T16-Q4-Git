@@ -6,6 +6,7 @@ TagManager:
   tags:
   - checkpoint
   - Enviroment
+  - Collectible
   layers:
   - Default
   - TransparentFX

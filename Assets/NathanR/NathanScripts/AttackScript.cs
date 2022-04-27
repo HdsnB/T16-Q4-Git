@@ -78,4 +78,13 @@ public class AttackScript : MonoBehaviour
         if (AttackPoint == null) return;
         Gizmos.DrawWireSphere(AttackPoint.position, attackRange);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Collectible")
+        {
+            collision.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
+            Debug.Log("collected" + collision.name);
+        }
+    }
 }
