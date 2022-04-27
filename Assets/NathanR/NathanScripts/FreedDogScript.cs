@@ -13,7 +13,7 @@ public class FreedDogScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.GetComponent<Rigidbody2D>().position.y >= -50)
+        if (this.transform.position.y <= -50)
         {
             Destroy(this.gameObject);
         }

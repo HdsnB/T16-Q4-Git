@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8212108277553177925}
   m_Layer: 8
   m_Name: Dog_Cage_collectible
-  m_TagString: Untagged
+  m_TagString: Cage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,6 +226,9 @@ MonoBehaviour:
   StartingHealth: 1
   DieSound: {fileID: 0}
   isCollectible: 1
+  Dog1: {fileID: 8047023134906130427, guid: 7c2fe35f8c5748147ae8242f01d45234, type: 3}
+  Dog2: {fileID: 0}
+  Dog3: {fileID: 0}
 --- !u!61 &8212108277553177925
 BoxCollider2D:
   m_ObjectHideFlags: 0
