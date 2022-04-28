@@ -34,6 +34,11 @@ public class PlayerHealthScript : MonoBehaviour
         {
             SceneManager.LoadScene("MenuScene");
         }
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            Die();
+        }
     }
 
     //checkpoint detector
