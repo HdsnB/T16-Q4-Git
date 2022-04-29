@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 170276285}
   - component: {fileID: 170276284}
   m_Layer: 0
-  m_Name: opening_cutscene_0
+  m_Name: opening_cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,8 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -4633137380426396279, guid: e4c5e83e9da0ef6428f57f44bcb91b27,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: f91f6271624483d46a74e500c2e00f17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -262,7 +261,7 @@ Transform:
   m_GameObject: {fileID: 170276283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 0.8435, y: 0.835, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
