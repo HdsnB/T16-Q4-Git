@@ -62,6 +62,15 @@ public class AttackScript : MonoBehaviour
                 }
             }
             
+            if (enemy.tag == "Cage")
+            {
+
+            }
+            else if (enemy.tag == null)
+            {
+
+            }
+
             enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
             Debug.Log("Hit" + enemy.name);
             //GetComponent<PlayerHealth>().getHealed();
