@@ -111,7 +111,7 @@ public class HudENEMYPatrol : MonoBehaviour
     void Flip()
     {
         mustPatrol = false;
-        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        transform.localPosition = new Vector2(transform.localPosition.x * -1, transform.localPosition.y);
         walkSpeed *= -1;
         mustPatrol = true;
     }
