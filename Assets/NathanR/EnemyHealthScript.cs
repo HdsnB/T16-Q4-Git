@@ -20,6 +20,9 @@ public class EnemyHealthScript : MonoBehaviour
     private Vector3 pos;
     private Vector3 pos2;
     private Vector3 pos3;
+    //public GameObject DogSpawnPoint1;
+    //public GameObject DogSpawnPoint;
+    //public GameObject DogSpawnPoint3;
 
     public class AudioScript : MonoBehaviour
     {
@@ -34,14 +37,17 @@ public class EnemyHealthScript : MonoBehaviour
         y = transform.position.y;
         z = transform.position.z;
         pos = new Vector3(x, y, z);
-        pos = new Vector3(x-1, y, z);
-        pos = new Vector3(x+1, y, z);
+        pos2 = new Vector3(x-0.5f, y, z);
+        pos3 = new Vector3(x+0.5f, y, z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //if (Input.GetKeyDown(KeyCode.G))
+        //{
+        //    TakeHit(1);
+        //}
     }
 
     public void TakeHit (float damage)

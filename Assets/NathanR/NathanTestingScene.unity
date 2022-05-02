@@ -563,6 +563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FreeDog3
       objectReference: {fileID: 0}
+    - target: {fileID: 119185393599209031, guid: a0aa33d8ddd5ae342a818c1ecb818507,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4290912448568929309, guid: a0aa33d8ddd5ae342a818c1ecb818507,
         type: 3}
       propertyPath: m_RootOrder
@@ -677,6 +682,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FreeDog2
       objectReference: {fileID: 0}
+    - target: {fileID: 3437731998722764704, guid: 05e365902b0406b439f420d9b6dad3da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e365902b0406b439f420d9b6dad3da, type: 3}
 --- !u!1001 &7394428884242655260
@@ -694,12 +704,12 @@ PrefabInstance:
     - target: {fileID: 1465496865086737869, guid: 0cd15a6bf15986648b50db79806cfef5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.51
+      value: 4.46
       objectReference: {fileID: 0}
     - target: {fileID: 1465496865086737869, guid: 0cd15a6bf15986648b50db79806cfef5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 1465496865086737869, guid: 0cd15a6bf15986648b50db79806cfef5,
         type: 3}
@@ -740,6 +750,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FreeDog4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182531889412069693, guid: 0cd15a6bf15986648b50db79806cfef5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859184695097751033, guid: 0cd15a6bf15986648b50db79806cfef5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cd15a6bf15986648b50db79806cfef5, type: 3}
@@ -784,6 +804,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FreeDog1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047023134906130427, guid: 7c2fe35f8c5748147ae8242f01d45234,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c2fe35f8c5748147ae8242f01d45234, type: 3}

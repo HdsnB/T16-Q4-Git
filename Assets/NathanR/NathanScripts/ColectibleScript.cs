@@ -31,7 +31,14 @@ public class ColectibleScript : MonoBehaviour
 
     public void CollectCollectible()
     {
+        if (CT != null) 
+        {
         CT.GetComponent<ScoreTrackingScript>().GainCollectibles(GivenWood, GivenStone, GivenDogs);
+        }
+        else
+        {
+            Debug.Log("no colectible tracker");
+        }
     }
 
     // Update is called once per frame
