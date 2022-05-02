@@ -65,7 +65,7 @@ public class PlayerHealthScript : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector3(-6.1f,-9.6f,0);
+            transform.position = new Vector3(-47,0,0);
         }
     }
 }
