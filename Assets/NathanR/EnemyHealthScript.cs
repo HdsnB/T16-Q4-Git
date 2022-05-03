@@ -37,8 +37,8 @@ public class EnemyHealthScript : MonoBehaviour
         y = transform.position.y;
         z = transform.position.z;
         pos = new Vector3(x, y, z);
-        pos2 = new Vector3(x-0.5f, y, z);
-        pos3 = new Vector3(x+0.5f, y, z);
+        pos2 = new Vector3(x-0.75f, y, z);
+        pos3 = new Vector3(x+0.75f, y, z);
     }
 
     // Update is called once per frame

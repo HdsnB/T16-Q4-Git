@@ -152,11 +152,8 @@ MonoBehaviour:
   DieSound: {fileID: 0}
   isCollectible: 1
   Dog1: {fileID: 3437731998722764704, guid: 05e365902b0406b439f420d9b6dad3da, type: 3}
-  Dog2: {fileID: 119185393599209031, guid: a0aa33d8ddd5ae342a818c1ecb818507, type: 3}
-  Dog3: {fileID: 6182531889412069693, guid: 0cd15a6bf15986648b50db79806cfef5, type: 3}
-  DogSpawnPoint1: {fileID: 0}
-  DogSpawnPoint2: {fileID: 0}
-  DogSpawnPoint3: {fileID: 0}
+  Dog2: {fileID: 6182531889412069693, guid: 0cd15a6bf15986648b50db79806cfef5, type: 3}
+  Dog3: {fileID: 119185393599209031, guid: a0aa33d8ddd5ae342a818c1ecb818507, type: 3}
 --- !u!61 &8608683291548533580
 BoxCollider2D:
   m_ObjectHideFlags: 0
