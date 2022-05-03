@@ -19,11 +19,11 @@ public class NathanCutsceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (creditsMove == creditsMoveMax)
+        if (Input.GetButtonDown("Jump") && creditsMove == creditsMoveMax)
         {
             SceneManager.LoadScene(NextScene);
         }
-        else if (Input.GetButtonDown("Jump"))
+        else if (Input.GetButtonDown("Jump") && creditsMove != creditsMoveMax)
         {
             creditsMove++;
             transform.position = new Vector3(transform.position.x, transform.position.y - FrameDistance, transform.position.z);
