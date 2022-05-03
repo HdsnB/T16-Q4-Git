@@ -8,7 +8,7 @@ public class PlayerHealthScript : MonoBehaviour
     public int StartingHP;
     public int CurrentHP;
     public GameObject LastCheckpoint;
-    Rigidbody2D rb;
+    //Rigidbody2D rb; //unneeded
     private GameObject cCP;
     private string cCPName;
     private string cCPName2;

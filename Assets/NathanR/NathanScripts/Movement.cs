@@ -51,7 +51,7 @@ public class Movement : MonoBehaviour
     {
         // anim stuff ---------------------------------------------------------------------------------------------
         a.SetFloat("yVelocity", rb.velocity.y);
-        Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+        Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("ground"));
         a.SetBool("Grounded", Grounded); // detect ground
 
         float horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
