@@ -109,8 +109,6 @@ GameObject:
   - component: {fileID: 407864526401954827}
   - component: {fileID: 407864526401955062}
   - component: {fileID: 407864526401955057}
-  - component: {fileID: 8302039527526941360}
-  - component: {fileID: 949431714530000107}
   - component: {fileID: 6620992956916299688}
   - component: {fileID: 2266626802760071473}
   - component: {fileID: 5628558953239613793}
@@ -286,7 +284,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407864526401954824}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdeda8e285303c647a65f0c56b01a2b5, type: 3}
   m_Name: 
@@ -295,51 +293,8 @@ MonoBehaviour:
   - {fileID: 407864525670144907}
   - {fileID: 407864526305006281}
   patrolPath: 0
-  pathTime: 2
+  pathTime: 3
   currentTime: 0
---- !u!114 &8302039527526941360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407864526401954824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd3441821ff8aea4f81f0d04a7634485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  face: {fileID: 0}
-  player: {fileID: 0}
-  agroRange: 12
-  moveSpeed: 5
---- !u!114 &949431714530000107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407864526401954824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5450cc046174a8d4eb433d47398ef099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 100
-  range: 5
-  timeBTWShots: 2
-  shootSpeed: 3
-  mustPatrol: 0
-  rb: {fileID: 407864526401954826}
-  groundCheckPos: {fileID: 1062914901291727528}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  bodyCollider: {fileID: 407864526401955062}
-  shootPos: {fileID: 3655445420413881507}
-  bullet: {fileID: 9170236090245644112}
-  Player: {fileID: 0}
-  bulletLifetime: 2
 --- !u!95 &6620992956916299688
 Animator:
   serializedVersion: 3
@@ -371,7 +326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0157b76472a8c244f9dbbc1ddaf879c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubba: {fileID: 0}
   distanceToStopPatrol: 6
   counter: 0
 --- !u!114 &5628558953239613793
@@ -386,7 +340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93865c52e2845014d93f451be463d1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubba: {fileID: 0}
   fireball: {fileID: 9170236090245644112}
   fireTime: 2
   elapsedTime: 0
@@ -527,6 +480,7 @@ GameObject:
   - component: {fileID: 1244376761150399253}
   - component: {fileID: 4454680276423967524}
   - component: {fileID: 4472897186645714646}
+  - component: {fileID: 4144582356385834722}
   m_Layer: 0
   m_Name: TEST
   m_TagString: Untagged
@@ -633,3 +587,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &4144582356385834722
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170236090245644112}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: 0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 0.50000006

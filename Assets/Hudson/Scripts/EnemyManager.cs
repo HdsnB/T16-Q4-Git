@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public GameObject bubba;
+    private GameObject bubba;
     public float distanceToStopPatrol;
     public int counter;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        bubba = GameObject.Find("Bubba");
+
     }
 
     // Update is called once per frame

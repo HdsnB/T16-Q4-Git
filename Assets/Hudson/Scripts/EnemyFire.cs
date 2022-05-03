@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFire : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject bubba;
+    private GameObject bubba;
     public GameObject fireball;
     public float fireTime;
     public float elapsedTime;
@@ -17,6 +17,7 @@ public class EnemyFire : MonoBehaviour
         rbFireball = fireball.GetComponent<Rigidbody2D>();
         //CreateFireBall();
 
+        bubba = GameObject.Find("Bubba");
     }
 
     // Update is called once per frame
