@@ -12,12 +12,12 @@ public class PlayerHealthScript : MonoBehaviour
     private GameObject cCP;
     private string cCPName;
     private string cCPName2;
-    private Animation anim;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = gameObject.GetComponent<Animation>();
+        anim = gameObject.GetComponent<Animator>();
         CurrentHP = StartingHP;
         Debug.Log(CurrentHP);
     }
@@ -29,9 +29,10 @@ public class PlayerHealthScript : MonoBehaviour
         {
             Debug.Log("dead");
             anim.Play("BubbaDeath");
-            //Die();
+            Invoke("Die", 1);
+            
         }
-
+        
         if (Input.GetKeyDown(KeyCode.T))
         {
             SceneManager.LoadScene("MenuScene");
@@ -64,10 +65,13 @@ public class PlayerHealthScript : MonoBehaviour
         if (LastCheckpoint != null)
         {
             transform.position = new Vector3(LastCheckpoint.transform.position.x, LastCheckpoint.transform.position.y + 0.5f, 0f);
+            
         }
         else
         {
             transform.position = new Vector3(-47,0,0);
+            
         }
+        
     }
 }
