@@ -8,7 +8,7 @@ public class PlayerHealthScript : MonoBehaviour
     public int StartingHP;
     public int CurrentHP;
     public GameObject LastCheckpoint;
-    //Rigidbody2D rb; //unneeded
+    Rigidbody2D rb;
     private GameObject cCP;
     private string cCPName;
     private string cCPName2;
@@ -29,8 +29,11 @@ public class PlayerHealthScript : MonoBehaviour
         {
             Debug.Log("dead");
             anim.Play("BubbaDeath");
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             Invoke("Die", 1);
-            
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         
         if (Input.GetKeyDown(KeyCode.T))
