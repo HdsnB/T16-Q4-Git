@@ -65,13 +65,19 @@ public class PlayerHealthScript : MonoBehaviour
         if (LastCheckpoint != null)
         {
             transform.position = new Vector3(LastCheckpoint.transform.position.x, LastCheckpoint.transform.position.y + 0.5f, 0f);
-            
+            Invoke("IdleAnim", 0.8f);
+
         }
         else
         {
             transform.position = new Vector3(-47,0,0);
+            Invoke("IdleAnim", 0.8f);
             
         }
         
+    }
+    public void IdleAnim()
+    {
+        anim.Play("BunnaIdle");
     }
 }
