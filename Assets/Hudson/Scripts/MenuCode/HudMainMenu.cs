@@ -8,7 +8,7 @@ public class HudMainMenu : MonoBehaviour
     public void PlayGame()
     {
         //or can use SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); which basically gets the number in the build settings
-        SceneManager.LoadScene("NathanScene");
+        SceneManager.LoadScene("OppeningCutsceneScene");
     }
 
 
