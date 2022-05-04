@@ -17,6 +17,7 @@ public class PlayerHealthScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rb = this.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         CurrentHP = StartingHP;
         Debug.Log(CurrentHP);
