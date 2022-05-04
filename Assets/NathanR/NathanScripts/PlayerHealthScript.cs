@@ -12,11 +12,12 @@ public class PlayerHealthScript : MonoBehaviour
     private GameObject cCP;
     private string cCPName;
     private string cCPName2;
-
+    private Animation anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = gameObject.GetComponent<Animation>();
         CurrentHP = StartingHP;
         Debug.Log(CurrentHP);
     }
@@ -27,7 +28,8 @@ public class PlayerHealthScript : MonoBehaviour
         if (CurrentHP == 0)
         {
             Debug.Log("dead");
-            Die();
+            anim.Play("BubbaDeath");
+            //Die();
         }
 
         if (Input.GetKeyDown(KeyCode.T))
@@ -37,7 +39,7 @@ public class PlayerHealthScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Die();
+            CurrentHP = 0;
         }
     }
 
