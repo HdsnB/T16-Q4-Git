@@ -37,6 +37,7 @@ public class HudENEMYPatrol : MonoBehaviour
     void Start()
     {
         Player = GameObject.Find("WizardCat");
+        //Player = GameObject.Find("Bubba");
         player = Player.GetComponent<Transform>();
         mustPatrol = true;
         canShoot = true;
@@ -130,7 +131,14 @@ public class HudENEMYPatrol : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
         newBullet.transform.position = new Vector3(newBullet.transform.position.x, newBullet.transform.position.y, 30);
 
-        newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
+        if (newBullet.transform.position.x < player.transform.position.x)
+        {
+            newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(-shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
+        } else
+        {
+            newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * walkSpeed * Time.fixedDeltaTime, 0f);
+        }
+        
         Debug.Log("Shoot");
         //Destroy(newBullet, bulletLifetime);
 
