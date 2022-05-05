@@ -8,6 +8,8 @@ TagManager:
   - Enviroment
   - Collectible
   - Cage
+  - Rock
+  - Wood
   layers:
   - Default
   - TransparentFX

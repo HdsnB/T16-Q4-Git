@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 5771900088102712020}
   - component: {fileID: 5771900088102712021}
   - component: {fileID: 5771900088102712018}
+  - component: {fileID: 3487353230267582478}
   - component: {fileID: 5771900088102712019}
   - component: {fileID: 7578691421559970317}
   - component: {fileID: 3051652079042896098}
@@ -170,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07482684, y: 0}
+  m_Offset: {x: 0.07482684, y: 0.041468978}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -181,8 +182,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8755834, y: 2}
+  m_Size: {x: 0.8755834, y: 1.917062}
   m_EdgeRadius: 0
+--- !u!114 &3487353230267582478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771900088102712016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5d46c6577dc764e9893b1f67253f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockText: {fileID: 0}
 --- !u!114 &5771900088102712019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +288,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.056154728}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -285,5 +299,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2}
+  m_Size: {x: 1.5, y: 1.8876905}
   m_EdgeRadius: 0
