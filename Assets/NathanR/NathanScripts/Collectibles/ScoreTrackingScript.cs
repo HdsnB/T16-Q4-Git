@@ -31,8 +31,8 @@ public class ScoreTrackingScript : MonoBehaviour
     public void GainCollectibles(int W, int S, int D)
     {
         Debug.Log("ScoreTrackingScript used");
-        Wood += W;
-        Stone += S;
+        if (W > 0) Wood ++;
+        if (S > 0) Stone ++;
         Dogs += D;
         w.text = Wood.ToString() + " / 8";
         s.text = Stone.ToString() + " / 8";
