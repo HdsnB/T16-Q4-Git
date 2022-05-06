@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GivenWood: 0
   GivenStone: 0
-  GivenDogs: 2
+  GivenDogs: 3
   CT: {fileID: 0}
 --- !u!114 &7555092106677975013
 MonoBehaviour:
