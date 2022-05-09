@@ -68,7 +68,7 @@ public class AttackScript : MonoBehaviour
             {
                 biteCageSound.Play();
             }
-            else if (enemy.tag == null)
+            else if (enemy.tag == "Untagged")
             {
                 biteSound.Play();
             }

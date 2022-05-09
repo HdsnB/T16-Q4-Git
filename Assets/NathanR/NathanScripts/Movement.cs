@@ -55,15 +55,16 @@ public class Movement : MonoBehaviour
         Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("ground"));
         a.SetBool("Grounded", Grounded); // detect ground
 
-        if ((rb.velocity.x > 0.25f && IsGrounded() == true) || (rb.velocity.x < -0.25f && IsGrounded() == true))
+        if ((rb.velocity.x > 0.25f && rb.velocity.x < -0.25f) && (Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.75f, 1f, 0f), 0, Vector2.down, 0.7f, ground) == true ))
         {
+            //---------------------------------------------------------------------------------------------
             Walk.volume += 1;
             Walk.Play();
         }
-        if (rb.velocity.x < 0.5f && rb.velocity.x > -0.5f)
-        {
-            Walk.volume -= 1;
-        }
+        //if (rb.velocity.x < 0.5f && rb.velocity.x > -0.5f)
+        //{
+        //    Walk.volume -= 1;
+        //}
 
         float horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
 
