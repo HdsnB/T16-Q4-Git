@@ -14,6 +14,9 @@ public class PlayerHealthScript : MonoBehaviour
     private string cCPName2;
     private Animator anim;
 
+    public AudioSource Death;
+    //public AudioSource Damaged;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,7 @@ public class PlayerHealthScript : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             Invoke("Die", 1);
+            Death.Play();
             rb.constraints = RigidbodyConstraints2D.None;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }

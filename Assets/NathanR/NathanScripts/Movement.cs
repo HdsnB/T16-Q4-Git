@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
 
     public AudioSource jumpSound;
     public AudioSource DoubleJumpSound;
+    public AudioSource Walk;
 
     // anim stuff ---------------------------------------------------------------------------------------------
     Animator a;
@@ -53,6 +54,11 @@ public class Movement : MonoBehaviour
         a.SetFloat("yVelocity", rb.velocity.y);
         Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("ground"));
         a.SetBool("Grounded", Grounded); // detect ground
+
+        if (rb.velocity.x > 0 || rb.velocity.x < 0)
+        {
+            Walk.Play();
+        }
 
         float horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
 
