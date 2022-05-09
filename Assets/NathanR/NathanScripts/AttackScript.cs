@@ -16,6 +16,8 @@ public class AttackScript : MonoBehaviour
     //public ScoreTrackingScript scoreScript;
 
     public AudioSource biteSound;
+    public AudioSource biteCageSound;
+
     public class AudioScript : MonoBehaviour
     {
         AudioSource audioSource;
@@ -64,18 +66,18 @@ public class AttackScript : MonoBehaviour
             
             if (enemy.tag == "Cage")
             {
-
+                biteCageSound.Play();
             }
             else if (enemy.tag == null)
             {
-
+                biteSound.Play();
             }
 
             enemy.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
             Debug.Log("Hit" + enemy.name);
             //GetComponent<PlayerHealth>().getHealed();
 
-            //biteSound.Play();
+            //biteSound.Play(); //---------------------------------------------------------------------------------------------------------------------
 
             //score bonus
             //scoreScript.points += 10;

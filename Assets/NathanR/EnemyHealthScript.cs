@@ -88,7 +88,7 @@ public class EnemyHealthScript : MonoBehaviour
                 }
             }
 
-            //DieSound.Play();
+            //DieSound.Play(); //---------------------------------------------------------------------------------------------------------------------
             Debug.Log("Enemy Dead");
 
             Destroy(gameObject);

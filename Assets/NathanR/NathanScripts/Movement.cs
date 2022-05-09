@@ -73,7 +73,7 @@ public class Movement : MonoBehaviour
             //Debug.Log("jump sound");
             //extraJumps--; not needed
             //Debug.Log("jump sound");
-            jumpSound.Play();
+            jumpSound.Play(); //---------------------------------------------------------------------------------------------------------------------
             //.Log("jump sound");
         }
 
@@ -84,7 +84,7 @@ public class Movement : MonoBehaviour
             //Debug.Log("jump sound 2");
             extraJumps--;
             //Debug.Log("jump sound 2");
-            DoubleJumpSound.Play();
+            DoubleJumpSound.Play(); //---------------------------------------------------------------------------------------------------------------------
             //Debug.Log("jump sound 2");
         }
 

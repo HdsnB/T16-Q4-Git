@@ -78,7 +78,7 @@ public class PlayerHealthScript : MonoBehaviour
             Invoke("IdleAnim", 0.8f);
             
         }
-        
+        //---------------------------------------------------------------------------------------------------------------------
     }
     public void IdleAnim()
     {
