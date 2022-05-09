@@ -55,7 +55,7 @@ public class Movement : MonoBehaviour
         Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("ground"));
         a.SetBool("Grounded", Grounded); // detect ground
 
-        if (rb.velocity.x > 0 || rb.velocity.x < 0)
+        if (rb.velocity.x > 0.25f || rb.velocity.x < 0.25f)
         {
             Walk.Play();
         }
