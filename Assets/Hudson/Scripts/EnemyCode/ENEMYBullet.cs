@@ -6,6 +6,8 @@ public class ENEMYBullet : MonoBehaviour
 { //CODE FROM SAME SHOOTING VIDEO FOR BULLET (Mike Scriven)
 
     //public float dieTime, damage;
+    public AudioSource damage;
+
 
     public GameObject InLevelPlayer;
     void Start()
@@ -36,8 +38,9 @@ public class ENEMYBullet : MonoBehaviour
             Debug.Log("HIT POGGERS");
             if (collision.gameObject.tag == "Player")
             {
-
+                //damage.Play();
                 InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP -= 1;
+                if (InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP > 0) damage.Play();
             }
 
             Destroy(gameObject);
