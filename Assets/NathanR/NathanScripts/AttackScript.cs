@@ -93,7 +93,7 @@ public class AttackScript : MonoBehaviour
         if (collision.tag == "Collectible")
         {
             collision.GetComponent<EnemyHealthScript>().TakeHit(AttackDamage);
-            Debug.Log("collected" + collision.name);
+            Debug.Log("collected: " + collision.name);
         }
     }
 }

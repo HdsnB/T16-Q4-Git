@@ -16,24 +16,25 @@ public class ColectibleScript : MonoBehaviour
         CT = GameObject.Find("ColectiblesTracker");
     }
 
-    private void OnCollissionEnter2D(Collision2D collision)
-    {
-        if (isCage == false)
-        {
-            if (collision.gameObject.tag == "Player")
-            {
-                Debug.Log("CollectScript trigger");
-                CollectCollectible();
-                Destroy(gameObject);
-            }
-        }
-    }
+    //public void OnTriggerEnter2D(Collision2D collision)
+    //{
+    //    if (isCage == false)
+    //    {
+    //        if (collision.gameObject.tag == "Player")
+    //        {
+    //            Debug.Log("CollectScript trigger");
+    //            CollectCollectible();
+    //            Destroy(gameObject);
+    //        }
+    //    }
+    //}
 
     public void CollectCollectible()
     {
         if (CT != null) 
         {
-        CT.GetComponent<ScoreTrackingScript>().GainCollectibles(GivenWood, GivenStone, GivenDogs);
+            CT.GetComponent<ScoreTrackingScript>().GainCollectibles(GivenWood, GivenStone, GivenDogs);
+            Debug.Log("Collect:" + GivenWood + GivenStone + GivenDogs);
         }
         else
         {

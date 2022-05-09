@@ -10,6 +10,8 @@ public class EnemyHealthScript : MonoBehaviour
     public AudioSource DieSound;
     public bool isCollectible = false;
 
+    private bool isCollected = false;
+
     //dogs
     public GameObject Dog1;
     public GameObject Dog2;
@@ -58,9 +60,10 @@ public class EnemyHealthScript : MonoBehaviour
         {
             if (isCollectible == true)
             {
-                this.GetComponent<ColectibleScript>().CollectCollectible();
-                if (this.tag == "Cage")
+                
+                if (this.tag == "Cage" && isCollected == false)
                 {
+                    this.GetComponent<ColectibleScript>().CollectCollectible();
                     if (this.GetComponent<ColectibleScript>().GivenDogs > 1)
                     {
 
@@ -76,6 +79,12 @@ public class EnemyHealthScript : MonoBehaviour
                     {
                         
                     }
+                    isCollected = true;
+                }
+                else if (this.tag != "Cage" && isCollected ==false)
+                {
+                    this.GetComponent<ColectibleScript>().CollectCollectible();
+                    isCollected = true;
                 }
             }
 
