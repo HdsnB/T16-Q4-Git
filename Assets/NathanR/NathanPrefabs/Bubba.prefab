@@ -250,6 +250,7 @@ MonoBehaviour:
   StartingHP: 4
   CurrentHP: 0
   LastCheckpoint: {fileID: 0}
+  boss: {fileID: 0}
   Death: {fileID: 8487414674508716437}
 --- !u!95 &5771900088102712022
 Animator:
@@ -596,7 +597,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 22dfa600ea41e144abdacb45bb3d01e2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0
   m_Pitch: 0.5
   Loop: 0
   Mute: 0
@@ -690,9 +691,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5cbb0f33bf30e704db933f2c7105d9b7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6c8b1ee780970e44e8cf8d08fb288980, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
