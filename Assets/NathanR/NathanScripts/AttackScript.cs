@@ -11,12 +11,14 @@ public class AttackScript : MonoBehaviour
     public Transform AttackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayer;
+    
 
     //public GameObject scoreTracker;
     //public ScoreTrackingScript scoreScript;
 
     public AudioSource biteSound;
     public AudioSource biteCageSound;
+    //public AudioSource Collect;
 
     public class AudioScript : MonoBehaviour
     {
