@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 5374849978527662517}
   - component: {fileID: 8487414674508716437}
   - component: {fileID: 5416049212392160194}
+  - component: {fileID: 4942918864400837184}
   m_Layer: 9
   m_Name: Bubba
   m_TagString: Player
@@ -775,3 +776,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!111 &4942918864400837184
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5771900088102712016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c7d02f0084acb4240a7e085ae7cd408d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
