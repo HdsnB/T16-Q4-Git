@@ -29,7 +29,7 @@ public class PlayerHealthScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CurrentHP == 0)
+        if (CurrentHP <= 0)
         {
             Debug.Log("dead");
             anim.Play("BubbaDeath");
