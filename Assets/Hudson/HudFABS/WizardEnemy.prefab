@@ -569,6 +569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: {fileID: 1006103367845356526}
+  Rib: {fileID: 4472897186645714646}
+  Sipt: {fileID: 1244376761150399253}
   InLevelPlayer: {fileID: 0}
 --- !u!50 &4472897186645714646
 Rigidbody2D:
