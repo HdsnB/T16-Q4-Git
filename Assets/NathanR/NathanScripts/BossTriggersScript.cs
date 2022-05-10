@@ -7,7 +7,9 @@ public class BossTriggersScript : MonoBehaviour
     public GameObject BossWall;
     public GameObject MidCutscene;
     private bool IsTriggered = false;
-    private bool finnished = false;
+    public bool finnished = false;
+    public Rigidbody2D rb;
+    //public GameObject P;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,9 @@ public class BossTriggersScript : MonoBehaviour
                 MidCutscene.SetActive(false);
                 finnished = true;
                 BossWall.SetActive(true);
+                rb.constraints = RigidbodyConstraints2D.None;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                
             }
         }
     }
@@ -38,6 +43,9 @@ public class BossTriggersScript : MonoBehaviour
                 
                 MidCutscene.SetActive(true);
                 IsTriggered = true;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }
     }

@@ -11,6 +11,7 @@ public class ScoreTrackingScript : MonoBehaviour
     public Text w;
     public Text s;
     public Text d;
+    public GameObject ResourcesWall;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +38,9 @@ public class ScoreTrackingScript : MonoBehaviour
         w.text = Wood.ToString() + " / 8";
         s.text = Stone.ToString() + " / 8";
         d.text = Dogs.ToString() + " / 32";
+        if (Wood >= 4 && Stone >= 4 && Dogs >= 12)
+        {
+            ResourcesWall.SetActive(false);
+        }
     }
 }
