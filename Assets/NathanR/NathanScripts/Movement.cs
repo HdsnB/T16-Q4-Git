@@ -26,6 +26,8 @@ public class Movement : MonoBehaviour
 
     private bool facingRight = true;
 
+    private float horizValue = 0f;
+
     public AudioSource jumpSound;
     public AudioSource DoubleJumpSound;
     public AudioSource Walk;
@@ -55,10 +57,10 @@ public class Movement : MonoBehaviour
         Grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("ground"));
         a.SetBool("Grounded", Grounded); // detect ground
 
-        if ((rb.velocity.x > 0.25f && rb.velocity.x < -0.25f) && (Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.75f, 1f, 0f), 0, Vector2.down, 0.7f, ground) == true ))
+        if ((rb.velocity.x > 0.25f && rb.velocity.x < -0.25f) && IsGrounded() == true)
         {
             //---------------------------------------------------------------------------------------------
-            Walk.volume += 1;
+            //Walk.volume += 1;
             Walk.Play();
         }
         //if (rb.velocity.x < 0.5f && rb.velocity.x > -0.5f)
@@ -66,7 +68,7 @@ public class Movement : MonoBehaviour
         //    Walk.volume -= 1;
         //}
 
-        float horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
+        horizValue = Input.GetAxis("Horizontal"); //moveing/walking anim stuff
 
         if (Mathf.Abs(horizValue) <= 0.3f)
         {
@@ -75,6 +77,11 @@ public class Movement : MonoBehaviour
         else
         {
             a.SetBool("Moving", true);
+            if (IsGrounded() == true)
+            {
+                if (Walk.isPlaying != true) Walk.Play();
+            }
+            else if (IsGrounded() != true) Walk.Stop();
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
