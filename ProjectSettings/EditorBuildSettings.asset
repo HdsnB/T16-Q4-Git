@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/MenuScene.unity
     guid: 41b97fc5d2ec1214fae212fe11e69df8
   - enabled: 1
-    path: Assets/MainScenes/OppeningCutsceneScene.unity
+    path: Assets/NathanR/OppeningCutsceneScene.unity
     guid: 9a304c6c72492dc428803f7683203265
   - enabled: 1
     path: Assets/MainScenes/NathanScene.unity
