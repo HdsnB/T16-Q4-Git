@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 4834642052108005136}
   - component: {fileID: 1006103367845356526}
   - component: {fileID: 1423356626196323080}
+  - component: {fileID: 5249892963289425113}
   m_Layer: 0
   m_Name: TEST
   m_TagString: Untagged
@@ -569,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: {fileID: 1006103367845356526}
+  anim: {fileID: 0}
   Rib: {fileID: 4472897186645714646}
   Sipt: {fileID: 1244376761150399253}
   InLevelPlayer: {fileID: 0}
@@ -816,3 +818,22 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &5249892963289425113
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9170236090245644112}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffb4dd14d4fb18046bc801cb139fa53c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

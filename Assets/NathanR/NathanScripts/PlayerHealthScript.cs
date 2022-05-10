@@ -13,6 +13,7 @@ public class PlayerHealthScript : MonoBehaviour
     private string cCPName;
     private string cCPName2;
     private Animator anim;
+    public GameObject boss;
 
     public AudioSource Death;
     //public AudioSource Damaged;
