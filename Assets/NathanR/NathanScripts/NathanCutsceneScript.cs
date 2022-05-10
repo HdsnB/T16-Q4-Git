@@ -21,7 +21,7 @@ public class NathanCutsceneScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && creditsMove == creditsMoveMax)
         {
-            SceneManager.LoadScene("HudCreditsScene");
+            SceneManager.LoadScene("NathanScene");
         }
         else if (Input.GetButtonDown("Jump") && creditsMove != creditsMoveMax)
         {

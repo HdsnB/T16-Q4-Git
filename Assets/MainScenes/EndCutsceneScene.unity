@@ -457,10 +457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721697351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fc7291217eb42469d4701946b9c652, type: 3}
+  m_Script: {fileID: 11500000, guid: 9737913af44e47c4d9b0455c2cd34da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FrameDistance: 15
   creditsMove: 0
   creditsMoveMax: 2
-  NextScene: MenuScene
+  NextScene: 
