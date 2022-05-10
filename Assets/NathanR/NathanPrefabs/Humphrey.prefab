@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 404dfc5f7c3ce00449bf111790d121a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
-  StartingHealth: 1
+  Health: 18
+  StartingHealth: 18
   DieSound: {fileID: 0}
   isCollectible: 0
   Dog1: {fileID: 0}
@@ -470,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb4496841186ce48a20b73121710ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: {fileID: 0}
   InLevelPlayer: {fileID: 0}
 --- !u!50 &916820086328706451
 Rigidbody2D:
