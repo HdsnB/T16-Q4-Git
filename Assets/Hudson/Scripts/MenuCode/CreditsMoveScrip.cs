@@ -12,7 +12,7 @@ public class CreditsMoveScrip : MonoBehaviour
     void Start()
     {
         creditsMove = 0;
-        creditsMoveMax = 5;
+        creditsMoveMax = 6;
     }
 
     // Update is called once per frame
