@@ -238,7 +238,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042630434, y: 0.05574751}
+  m_Offset: {x: 0.042630434, y: 0.11004138}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -249,7 +249,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0852609, y: 1.388505}
+  m_Size: {x: 1.0852609, y: 1.4970927}
   m_EdgeRadius: 0
 --- !u!61 &407864526401955062
 BoxCollider2D:
@@ -264,7 +264,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019675493, y: 0}
+  m_Offset: {x: 0.019675493, y: 0.056879282}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -275,7 +275,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.039351, y: 1.5}
+  m_Size: {x: 1.039351, y: 1.6137586}
   m_EdgeRadius: 0
 --- !u!114 &407864526401955057
 MonoBehaviour:
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0157b76472a8c244f9dbbc1ddaf879c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToStopPatrol: 6
+  distanceToStopPatrol: 7
   counter: 0
 --- !u!114 &5628558953239613793
 MonoBehaviour:
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireball: {fileID: 9170236090245644112}
-  fireTime: 1.5
+  fireTime: 2.5
   elapsedTime: 0
 --- !u!1 &2075872746304043666
 GameObject:
@@ -618,7 +618,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 207728eaf01e48b4e9e23ea40c7db46e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -714,7 +714,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c35fe20eada587048a308e282da2f327, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
