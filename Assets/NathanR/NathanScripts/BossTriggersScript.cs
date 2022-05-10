@@ -24,6 +24,7 @@ public class BossTriggersScript : MonoBehaviour
             {
                 MidCutscene.SetActive(false);
                 finnished = true;
+                BossWall.SetActive(true);
             }
         }
     }
@@ -34,7 +35,7 @@ public class BossTriggersScript : MonoBehaviour
         {
             if (collision.tag == "Player")
             {
-                BossWall.SetActive(true);
+                
                 MidCutscene.SetActive(true);
                 IsTriggered = true;
             }
