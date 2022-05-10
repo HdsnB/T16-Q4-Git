@@ -488,7 +488,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c478b3d41dfe49747b2b83b06de67f3d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.35
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1083,7 +1083,7 @@ RectTransform:
   m_GameObject: {fileID: 1658940639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 67.58769}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 585941652}
   m_Father: {fileID: 546192483}
@@ -1091,8 +1091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1075, y: -356}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchoredPosition: {x: 1060, y: -340}
+  m_SizeDelta: {x: 960, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1658940641
 MonoBehaviour:
@@ -1122,10 +1122,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 536fbe0110d25dd41bae750ba0474ed4,
+    m_HighlightedSprite: {fileID: 21300000, guid: 942e40a7ab6a00a47acf5dffcb6bee1e,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: d7908a5a087792f49804a08c3dc50808, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: d7908a5a087792f49804a08c3dc50808, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: a961579d73f5de74d98cc41367fc8485, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: a961579d73f5de74d98cc41367fc8485, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ccaea0f32d8b41e4eb99a3da8a682b0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2b36d6e68fedfc41bc6e5d8f41cd82d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
