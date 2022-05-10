@@ -53,11 +53,17 @@ public class ENEMYBullet : MonoBehaviour
             if (collision.gameObject.tag == "Player")
             {
                 //damage.Play();
+                Destroy(this.gameObject);
                 InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP -= 1;
                 if (InLevelPlayer.GetComponent<PlayerHealthScript>().CurrentHP > 0) damage.Play();
-            }
+                Debug.Log("Destroy Fireball");
+                //this.GetComponent<SpriteRenderer>().enabled = false;
+                
 
-            Destroy(gameObject);
+
+            }
+            //this.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(this.gameObject);
 
         }
 
