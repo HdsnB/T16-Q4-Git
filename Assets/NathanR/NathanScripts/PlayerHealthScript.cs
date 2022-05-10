@@ -84,6 +84,7 @@ public class PlayerHealthScript : MonoBehaviour
             
         }
         //---------------------------------------------------------------------------------------------------------------------
+        boss.GetComponent<EnemyHealthScript>().Health = boss.GetComponent<EnemyHealthScript>().StartingHealth;
     }
     public void IdleAnim()
     {
