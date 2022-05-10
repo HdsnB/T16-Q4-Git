@@ -7,12 +7,13 @@ public class ENEMYBullet : MonoBehaviour
 
     //public float dieTime, damage;
     public AudioSource damage;
-
+    private Animator anim;
 
     public GameObject InLevelPlayer;
     void Start()
     {
         InLevelPlayer = GameObject.FindGameObjectWithTag("Player");
+        anim.Play("FireBallAnim");
     }
 
     //public void OnCollosionEnter2D(Collision2D collision)
