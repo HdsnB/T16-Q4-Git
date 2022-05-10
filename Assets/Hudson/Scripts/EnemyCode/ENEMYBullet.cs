@@ -7,15 +7,28 @@ public class ENEMYBullet : MonoBehaviour
 
     //public float dieTime, damage;
     public AudioSource damage;
-    private Animator anim;
+    public Animator anim;
+    public Rigidbody2D Rib;
+    public SpriteRenderer Sipt;
+
 
     public GameObject InLevelPlayer;
     void Start()
     {
         InLevelPlayer = GameObject.FindGameObjectWithTag("Player");
-        anim.Play("FireBallAnim");
     }
-
+    public void Update()
+    {
+        if (Rib.velocity.x < 0f)
+        {
+            Debug.Log("Working right");
+            Sipt.flipX = false;
+        } else
+        {
+            Debug.Log("Working left");
+            Sipt.flipX = true;
+        }
+    }
     //public void OnCollosionEnter2D(Collision2D collision)
     //{
     //    if (collision.gameObject.tag == "Enviroment" || collision.gameObject.tag == "Player")
