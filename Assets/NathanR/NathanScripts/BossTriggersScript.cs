@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossTriggersScript : MonoBehaviour
 {
     public GameObject BossWall;
+    public GameObject EndWall;
     public GameObject MidCutscene;
     private bool IsTriggered = false;
     public bool finnished = false;
@@ -26,6 +27,9 @@ public class BossTriggersScript : MonoBehaviour
             {
                 MidCutscene.SetActive(false);
                 finnished = true;
+
+                EndWall.SetActive(true);
+
                 BossWall.SetActive(true);
                 rb.constraints = RigidbodyConstraints2D.None;
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -40,8 +44,10 @@ public class BossTriggersScript : MonoBehaviour
         {
             if (collision.tag == "Player")
             {
-                
+
                 MidCutscene.SetActive(true);
+                
+
                 IsTriggered = true;
                 rb.constraints = RigidbodyConstraints2D.FreezePositionX;
                 rb.constraints = RigidbodyConstraints2D.FreezePositionY;
